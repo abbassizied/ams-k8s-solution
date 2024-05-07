@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mysql-sts
-  namespace: ams_database
+  namespace: ams-database
   labels:
     app: mysql
 spec:
