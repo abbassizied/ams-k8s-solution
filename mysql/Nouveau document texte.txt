@@ -1,0 +1,8 @@
+https://blog.knoldus.com/how-to-deploy-mysql-statefulset-in-kubernetes/
+https://www.mirantis.com/blog/how-to-use-statefulsets-and-create-a-scalable-mysql-server-on-kubernetes
+https://medium.com/@talhanaeem.a1/deploying-mysql-database-on-kubernetes-simplifying-scalability-and-management-8cb8042cd8e9
+
+
+
+
+
