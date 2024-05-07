@@ -1,0 +1,11 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: pma
+spec:
+  parentRefs:
+  - name: ams-web
+  rules:
+  - backendRefs:
+    - name: pma-svc
+      port: 80
