@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql-svc
-  namespace: ams_database
+  namespace: ams-database
   labels:
     app: mysql
 spec:
