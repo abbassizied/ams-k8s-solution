@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: db-secrets
-  namespace: ams_database
+  namespace: ams-database
 type: Opaque
 data:
   root-password: cm9vdA== # root
