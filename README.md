@@ -1,0 +1,1 @@
+# ams-k8s-solution
