@@ -24,7 +24,7 @@ spec:
               cpu: "0.01"
           env:
             - name: PMA_HOST
-              value: "mysql"
+              value: "mysql-svc"
             - name: PMA_USER
               valueFrom:
                 secretKeyRef:
