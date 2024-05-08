@@ -1,0 +1,24 @@
+#------------------------------------------------------------------
+$ git clone https://github.com/abbassizied/ams-k8s-solution.git
+$ cd ams-k8s-solution
+#------------------------------------------------------------------
+$ kubectl create namespace ams-database  
+$ kubectl config set-context --current --namespace=ams-database
+#------------------------------------------------------------------
+$ kubectl apply -f ./mysql-provider-db
+$ kubectl get all -n ams-database
+$ kubectl describe secret db-secrets -n ams-database
+$ kubectl get pvc -n ams-database
+# List the pods
+$ kubectl get pod -n ams-database 
+# Find the MySQL pod and copy its name by selecting it and pressing Ctrl+Shift+C
+# Get a shell for the pod by executing the following command:
+$ kubectl exec -it mysql-sts-0 -- /bin/bash
+# The pod shell replaces the main shell
+# Type the following command to access the MySQL shell:
+bash-5.1# mysql -u root -p
+#------------------------------------------------------------------
+$ kubectl apply -f ./phpmyadmin-np
+# kubectl apply -f ./phpmyadmin
+# kubectl apply -f ./ingress
+#------------------------------------------------------------------ 
